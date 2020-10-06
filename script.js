@@ -2,6 +2,6 @@ console.log("JIMBERT");
 alert("ERROR");
 
 var x = "Jo"
-var y = 10 + 23;
+var y = Math.floor(Math.random() * 11);
 
 console.log("Salut " + x + ". Je t'envoie " + y + " bisous via internet")
