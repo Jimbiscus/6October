@@ -1,17 +1,8 @@
-
-
-function discountedPrice(x) {
-    return depense - (depense * x);
-}
-function discount(x) {
-    return (depense * x);
-}
-
 function discountMachine() {
     console.log((x * 100) + "% de réduction.");
     console.log("Le prix de votre article : " + depense + "€");
-    console.log("Votre réduction : " + (discount(x)) + "€");
-    console.log("Votre prix final :" + discountedPrice(x) + "€");
+    console.log("Votre réduction : " + (depense * x) + "€");
+    console.log("Votre prix final :" + (depense - (depense * x)) + "€");
 }
 
 var depense = prompt("Combien d'argent dépensez vous : ");
