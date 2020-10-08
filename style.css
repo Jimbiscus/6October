@@ -1,8 +1,13 @@
 body {
-    background-color: tomato;
     
+    font-size: 100px;
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+    color:lightgray;
+
 }
 
 html {
-    background-color: tomato;
+    background-color: cornflowerblue;
+    background-image: url("spare.jpg");
 }

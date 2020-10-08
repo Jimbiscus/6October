@@ -8,28 +8,29 @@ function discount(x) {
 }
 
 function discountMachine() {
-    console.log((x * 100) + "% de réduction.");
-    console.log("Le prix de votre article : " + depense + "€");
-    console.log("Votre réduction : " + (discount(x)) + "€");
-    console.log("Votre prix final :" + discountedPrice(x) + "€");
+    document.write((x * 100) + "% de réduction.<br>");
+    document.write("Le prix de votre article : " + depense + "€<br>");
+    document.write("Votre réduction : " + (discount(x)) + "€<br>");
+    document.write("Votre prix final : " + discountedPrice(x) + "€<br>");
 }
 
 var depense = prompt("Combien d'argent dépensez vous : ");
 if (depense < 20) {
-    console.log("Pas de réduction.");
-    console.log("Votre prix final : " + depense + "€");
+    document.write("Pas de réduction.<br>");
+    document.write("Votre prix final : " + depense + "€<br>");
 
 }
 else if (depense >= 20 && depense <= 30) {
     x = 0.1;
-    discountMachine();
+    document.write(discountMachine());
 
 }
 else if (depense > 30 && depense <= 50) {
     x = 0.2;
-    discountMachine();
+    document.write(discountMachine());
 }
 else {
     x = 0.3;
-    discountMachine();
+    document.write(discountMachine());
 }
+
